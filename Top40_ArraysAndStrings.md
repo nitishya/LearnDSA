@@ -8,3 +8,8 @@
 7. Check if a string is a palindrome.
 8. Find the first non-repeating character in a string.
 9. Write a program to remove duplicates from a sorted array.
+
+---
+1. Find the maximum sum subarray.
+   ```
+   
