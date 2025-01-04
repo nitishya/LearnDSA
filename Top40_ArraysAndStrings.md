@@ -11,7 +11,7 @@
 
 ---
 1. Find the maximum sum subarray.
-   ```
+```
 package arraysString;
 import java.util.Arrays;
 import java.util.OptionalInt;
