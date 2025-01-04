@@ -12,8 +12,7 @@
 ---
 1. Find the maximum sum subarray.
    ```
-   package arraysString;
-
+package arraysString;
 import java.util.Arrays;
 import java.util.OptionalInt;
 
@@ -21,10 +20,10 @@ public class MaximumSubArray {
 
 	static int maxArraySum(int[] arr) {
 
-		OptionalInt res = Arrays.stream(arr).reduce(( m,c) ->{
-			int newMaxSum = Math.max(c,m+c);
-			return newMaxSum;			
-				});
+		OptionalInt res = Arrays.stream(arr).reduce((m, c) -> {
+			int newMaxSum = Math.max(c, m + c);
+			return newMaxSum;
+		});
 		return res.orElse(0);
 	}
 
@@ -35,6 +34,7 @@ public class MaximumSubArray {
 
 	}
 }
+
 ```
 
 
