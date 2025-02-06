@@ -728,7 +728,7 @@ class Solution {
 }
 ```
 
-**ThreeSum Problem**
+**13 - ThreeSum Problem**
 
 Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
 Notice that the solution set must not contain duplicate triplets.
@@ -820,5 +820,16 @@ class Solution {
     }
 }
 ```
+**14- Subarray Sum Equals K**
 
+Given an array of integers nums and an integer k, return the total number of subarrays whose sum equals to k.
+
+A subarray is a contiguous non-empty sequence of elements within an array.
+
+ Example 1:
+Input: nums = [1,1,1], k = 2
+Output: 2
+
+**My Approach**
+```
 
