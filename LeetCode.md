@@ -832,4 +832,34 @@ Output: 2
 
 **My Approach**
 ```
+package medium;
+import java.util.HashMap;
+public class SubArraySum {
 
+	 public static int subarraySum(int[] nums, int k) {
+	        int count = 0, sum = 0;
+	        HashMap<Integer, Integer> prefixSumMap = new HashMap<>();
+	        prefixSumMap.put(0, 1); // Initialize with sum 0 occurring once
+
+	        for (int num : nums) {
+	            sum += num;
+	            // If (sum - k) exists in map, add its occurrences to count
+	            if (prefixSumMap.containsKey(sum - k)) {
+	                count += prefixSumMap.get(sum - k);
+	            }
+	            // Store the current sum in the map
+	            prefixSumMap.put(sum, prefixSumMap.getOrDefault(sum, 0) + 1);
+	        }
+	        return count;
+	    }
+
+	    public static void main(String[] args) {
+	        int[] nums1 = {1, 1, 1};
+	        int k1 = 2;
+	        System.out.println(subarraySum(nums1, k1)); // Output: 2
+
+	        int[] nums2 = {1, 2, 3};
+	        int k2 = 3;
+	        System.out.println(subarraySum(nums2, k2)); // Output: 2
+	    }
+	}
