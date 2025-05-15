@@ -16,6 +16,7 @@ The result of the merge is [1,2,2,3,5,6] with the underlined elements coming fro
 
 
 '''
+
 package array;
 
 public class MergeSortedArray2 {
@@ -55,4 +56,6 @@ public class MergeSortedArray2 {
 	}
 
 }
+
+
 '''
